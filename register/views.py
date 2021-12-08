@@ -186,10 +186,10 @@ class RegistroCPEView(CreateAPIView):
 
                         try:
                             # Guardar el XML en S3
-                            s3.upload_file('staticfiles/' + nombreXml, bucketaws + 'cpe', nombreXml, ExtraArgs={'ACL': 'public-read'})
+                            s3.upload_file('staticfiles/' + nombreXml, 'cpepressto', nombreXml, ExtraArgs={'ACL': 'public-read'})
                             fs.delete(nombreXml)
                             # Guardar el PDF en S3
-                            s3.upload_file('staticfiles/' +nombrePdf, bucketaws + 'pdf',  nombrePdf, ExtraArgs={'ACL': 'public-read'})
+                            s3.upload_file('staticfiles/' +nombrePdf, 'pdfpressto',  nombrePdf, ExtraArgs={'ACL': 'public-read'})
                             fs.delete(nombrePdf)
 
                                                          
@@ -307,10 +307,10 @@ class RegistroResumenView(CreateAPIView):
 
                         try:
                             # Guardar el XML en S3
-                            s3.upload_file('staticfiles/' + nombreXml, bucketaws + 'cpe', nombreXml, ExtraArgs={'ACL': 'public-read'})
+                            s3.upload_file('staticfiles/' + nombreXml, 'cpepressto', nombreXml, ExtraArgs={'ACL': 'public-read'})
                             fs.delete(nombreXml)
                             # Guardar el PDF en S3 
-                            s3.upload_file('staticfiles/' + nombrePdf, bucketaws + 'pdf', nombrePdf, ExtraArgs={'ACL': 'public-read'})
+                            s3.upload_file('staticfiles/' + nombrePdf, 'pdfpressto', nombrePdf, ExtraArgs={'ACL': 'public-read'})
                             fs.delete(nombrePdf)
                                                          
                             dicCpe.setdefault('XmlCpe', 'https://cpepressto.s3-sa-east-1.amazonaws.com/' + nombreXml)
@@ -545,7 +545,7 @@ class ActualizacionCPEView(CreateAPIView):
             dicCdr.setdefault('mensajeCdr', mensajeCdr) 
   
             try:   
-                s3.upload_file('staticfiles/' + nombre_seguro, bucketaws + 'cdr', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
+                s3.upload_file('staticfiles/' + nombre_seguro, 'cdrpressto', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
                 fs.delete(nombre_seguro)
                 dicCdr.setdefault('CdrCpe', 'https://cdrpressto.s3-sa-east-1.amazonaws.com/' + nombre_seguro)
                 
@@ -648,7 +648,7 @@ class ActualizacionResumenView(CreateAPIView):
 
 
             try: 
-                s3.upload_file('staticfiles/' + nombre_seguro, bucketaws + 'cdr', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
+                s3.upload_file('staticfiles/' + nombre_seguro, 'cdrpressto', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
                 fs.delete(nombre_seguro)
                 dicCdr.setdefault('CdrCpe', 'https://cdrpressto.s3-sa-east-1.amazonaws.com/' + nombre_seguro)
                 
