@@ -74,10 +74,10 @@ WSGI_APPLICATION = 'eclickdata.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dbclickdatatest',
-        'USER': 'admin',
-        'PASSWORD': 'gurQ8IuuTK',
-        'HOST': 'clickdata.c7qddv0l51zs.us-east-2.rds.amazonaws.com',
+        'NAME': 'dbvisorcpe',
+        'USER': 'usercpe',
+        'PASSWORD': 'SfgdSyut#3$',
+        'HOST': '45.80.153.25',
         'PORT': '3306'
     }
 }

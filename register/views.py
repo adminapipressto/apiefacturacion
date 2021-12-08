@@ -15,8 +15,8 @@ from .switch import switch
 
 from django.db import connection  
                                    
-os.environ["AWS_ACCESS_KEY_ID"] = "AKIATWLBE4BJTSDWSMUY"
-os.environ["AWS_SECRET_ACCESS_KEY"] = "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"
+os.environ["AWS_ACCESS_KEY_ID"] = "AKIARVW7GXHUSBMUU54R"
+os.environ["AWS_SECRET_ACCESS_KEY"] = "Sn57jdLbvjfCVu06qPslxNIt/4OuApD4T0II01h5"
 bucketaws = 'testclickdata' 
 
 # Create your views here.
@@ -193,8 +193,8 @@ class RegistroCPEView(CreateAPIView):
                             fs.delete(nombrePdf)
 
                                                          
-                            dicCpe.setdefault('XmlCpe', 'https://'+bucketaws+'cpe.s3.us-east-2.amazonaws.com/' + nombreXml)
-                            dicCpe.setdefault('PdfCpe', 'https://'+bucketaws+'pdf.s3.us-east-2.amazonaws.com/' + nombrePdf) 
+                            dicCpe.setdefault('XmlCpe', 'https://cpepressto.s3-sa-east-1.amazonaws.com/' + nombreXml)
+                            dicCpe.setdefault('PdfCpe', 'https://pdfpressto.s3-sa-east-1.amazonaws.com/' + nombrePdf)
                             
                             respuesta = self.get_serializer(data = dicCpe)
                             if respuesta.is_valid(raise_exception=True):
@@ -313,8 +313,9 @@ class RegistroResumenView(CreateAPIView):
                             s3.upload_file('staticfiles/' + nombrePdf, bucketaws + 'pdf', nombrePdf, ExtraArgs={'ACL': 'public-read'})
                             fs.delete(nombrePdf)
                                                          
-                            dicCpe.setdefault('XmlCpe', 'https://'+bucketaws+'cpe.s3.us-east-2.amazonaws.com/' + nombreXml)
-                            dicCpe.setdefault('PdfCpe', 'https://'+bucketaws+'pdf.s3.us-east-2.amazonaws.com/' + nombrePdf)
+                            dicCpe.setdefault('XmlCpe', 'https://cpepressto.s3-sa-east-1.amazonaws.com/' + nombreXml)
+                            dicCpe.setdefault('PdfCpe', 'https://pdfpressto.s3-sa-east-1.amazonaws.com/' + nombrePdf)
+
 
                             respuesta = self.get_serializer(data = dicCpe)
                             if respuesta.is_valid(raise_exception=True):
@@ -546,7 +547,7 @@ class ActualizacionCPEView(CreateAPIView):
             try:   
                 s3.upload_file('staticfiles/' + nombre_seguro, bucketaws + 'cdr', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
                 fs.delete(nombre_seguro)
-                dicCdr.setdefault('CdrCpe', 'https://'+bucketaws+'cdr.s3.us-east-2.amazonaws.com/' + nombre_seguro)
+                dicCdr.setdefault('CdrCpe', 'https://cdrpressto.s3-sa-east-1.amazonaws.com/' + nombre_seguro)
                 
  
                 respuesta = self.serializer_class(cpeVal, data=dicCdr)  
@@ -649,7 +650,7 @@ class ActualizacionResumenView(CreateAPIView):
             try: 
                 s3.upload_file('staticfiles/' + nombre_seguro, bucketaws + 'cdr', nombre_seguro, ExtraArgs={'ACL': 'public-read'})
                 fs.delete(nombre_seguro)
-                dicCdr.setdefault('CdrCpe', 'https://'+bucketaws+'cdr.s3.us-east-2.amazonaws.com/' + nombre_seguro) 
+                dicCdr.setdefault('CdrCpe', 'https://cdrpressto.s3-sa-east-1.amazonaws.com/' + nombre_seguro)
                 
                 respuesta = self.serializer_class(cpeVal, data=dicCdr) 
                 if respuesta.is_valid(raise_exception=True): 
