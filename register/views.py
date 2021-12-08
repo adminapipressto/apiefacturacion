@@ -686,7 +686,7 @@ class ActualizacionResumenView(CreateAPIView):
             }, status=400)
  
 class TipoCPEView(ListCreateAPIView):
-    queryset = TipoCPEModel.objects.get(estado = 1)
+    queryset = TipoCPEModel.objects.filter(estado = 1)
     serializer_class = TipoCPESerializer
     def get(self, request): 
             respuesta = self.get_serializer(self.get_queryset(), many=True)
