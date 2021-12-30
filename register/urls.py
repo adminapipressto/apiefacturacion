@@ -14,6 +14,6 @@ urlpatterns = [
     path('estadolist', EstadoListView.as_view(), name='EstadoList'),
     path('validaremisor/<str:rucEmisor>/<str:claveEmisor>/', ValidarEmisorView.as_view(), name='ValidarEmisor'),
     path('consultarcpe/<str:rucEmisor>/<int:tipoDocReceptor>/<str:rucReceptor>/<int:tipoCpe>/<str:serieCpe>/<str:numeroCpe>/<str:fechaCpe>/<str:totalCpe>', CPEView.as_view(), name='CPE'),
-    path('consultarcpelist/<int:tipoCpe>/<int:estadoCpe>/<str:rucReceptor>/<str:serieCpe>/<str:numeroCpe>/<str:fechaDesde>/<str:fechaHasta>', CPEListView.as_view(), name='CPEList'),
+    path('consultarcpelist/<int:tipoCpe>/<int:estadoCpe>/<str:rucReceptor>/<str:serieCpe>/<str:numeroCpe>/<str:fechaDesde>/<str:fechaHasta>/<int:idEmisor>', CPEListView.as_view(), name='CPEList'),
 ]
  
