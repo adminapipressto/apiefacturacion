@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:billservice="http://tempuri.org/" xmlns:exsl="http://exslt.org/common" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:local="urn:local">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><Signature Id="SignatureSP" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>3y9CC/heOALaXd/vGQRIBaJWlJI=</DigestValue></Reference></SignedInfo><SignatureValue>PNOadVobl4+2dQK9glgRN833NAN4E8tbSzOISsF0wSyJkL/hiSpcFIwz4KT8/ERBpwStOYBXOwKzluQVww+CDoqk+3hMzta5dO9SlYPhquRHYfLyMtXHTc17sE3sZn20jwI5OcZ5tOkau7NsAZVjZVUc5hDZ1p0LlQNeGXHoddvl1sz+r3MzsPNkPmK5SJGAK/y2zY/jzPvwPLyVaSnLH3Tthjc+m9zUxfFKSDLfNzRvsL4eE1MdVvov6RyLQrrcEIGwT74OCVQZB7RFz/Xxl8xrCWvLLMbgT4rbUlBei3W5O+uMDJqyz1t/nw0D+O89RMAYBlDG9f4i4gebi+/x+g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=PE, L=LIMA, O=CONTEXTOS ASOCIADOS S.A., OU=Validated by Llama.pe ER, OU=20600521226, SERIALNUMBER=05642532, CN=VELASQUEZ LINAN EDGARDO HUGO, E=hugo.pressto@gmail.com, STREET=CAL. 1 LT. 03 MZ. B ASC. LA CRUZ DE HUANCHIHUAYLAS</X509SubjectName><X509Certificate>MIIFPDCCBCSgAwIBAgIICWkxJXDYlTkwDQYJKoZIhvcNAQELBQAwRjEkMCIGA1UEAwwbTGxhbWEucGUgU0hBMjU2IFN0YW5kYXJkIENBMREwDwYDVQQKDAhMTEFNQS5QRTELMAkGA1UEBhMCUEUwHhcNMjAwMjAzMTcxNTI2WhcNMjIwMjAyMTcxNTAwWjCCARYxOzA5BgNVBAkMMkNBTC4gMSBMVC4gMDMgTVouIEIgQVNDLiBMQSBDUlVaIERFIEhVQU5DSElIVUFZTEFTMSUwIwYJKoZIhvcNAQkBFhZodWdvLnByZXNzdG9AZ21haWwuY29tMSUwIwYDVQQDDBxWRUxBU1FVRVogTElOQU4gRURHQVJETyBIVUdPMREwDwYDVQQFEwgwNTY0MjUzMjEUMBIGA1UECwwLMjA2MDA1MjEyMjYxITAfBgNVBAsMGFZhbGlkYXRlZCBieSBMbGFtYS5wZSBFUjEhMB8GA1UECgwYQ09OVEVYVE9TIEFTT0NJQURPUyBTLkEuMQ0wCwYDVQQHDARMSU1BMQswCQYDVQQGEwJQRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALwS94w4KpWIpPtsF1E3Adeg9U0YDIWvOtUz9Zi1JQUDY63K8k0ss4WUDl3jcIKuJO1WWIX64lYaNJUCSOTu1UWY/UK23ndkI565NPQ/NZysZxc7Y8SfsK6gZAgy4UNem0osd0YNMwRap2U8WyHu3mdQwq9LFBJUDHIsnadd2GEpFWOHZeEELcfgfgO9mshx6XjSuMPbqM5BudQQ8jUYjH8rx0Vi9MxL3thBffsBW+XcMUQ99t50dMJ0Q3eKeQH2WBLREtyyGyn4bmhpgSCAyvPRUBhsW4CfKH8dMKUNPkQ8pqcAl2SzMrz7cgmI9F4U8/ZAgLL9mQeAarFYpyl+/QcCAwEAAaOCAVowggFWMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUXYhbretl+/5oouTZbz1XcqLvK5kwMAYIKwYBBQUHAQEEJDAiMCAGCCsGAQUFBzABhhRodHRwOi8vb2NzcC5sbGFtYS5wZTAhBgNVHREEGjAYgRZodWdvLnByZXNzdG9AZ21haWwuY29tMEYGA1UdIAQ/MD0wOwYNKwYBBAGDl3cAAQACATAqMCgGCCsGAQUFBwIBFhxodHRwczovL2xsYW1hLnBlL3JlcG9zaXRvcnkvMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA6BgNVHR8EMzAxMC+gLaArhilodHRwOi8vY3JsLmxsYW1hLnBlL2xsYW1hcGVzdGFuZGFyZGNhLmNybDAdBgNVHQ4EFgQUKbA8ywpVRRCv0lo2UHlFz44bvV8wDgYDVR0PAQH/BAQDAgbAMA0GCSqGSIb3DQEBCwUAA4IBAQAtwusDNFLlEEk4JXEJLrLnU3zhM/yI0yojmVuq+q5GJ/wr56M+h3MCIm50g7uiwLxZH0ZfbWHGJMXnZVP7MNrRb3y7EX3ak9vfCd3cQsk+s9Qqx+jLJVvBQZgRJvow0TQ6gYOwHmlLzfMeBx+gabK0TYJVrAYfEyNhySZwIRGL4SFr27YTTZAtGCgJzss3eItW/LsHoVWmEUIJdxtJX/e5XMFaG6cp8UFCT3QkIpy/9/5phjvJVF7pxraDbknfYmbe4Z14clGpKUBB/uQ1TCOVlrTgKLkh55PnX9e4gplTSPvaTik103ULQtgQfx4Qe/5m8YNJ0/gRoLLu/unMoMck</X509Certificate></X509Data></KeyInfo></Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <billservice:AdditionalInformationJadal>
+          <billservice:Proveedor>Bill Service</billservice:Proveedor>
+          <billservice:Version>1.0.0.0</billservice:Version>
+        </billservice:AdditionalInformationJadal>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <billservice:AdditionalInformationCliente>
+          <billservice:FechaGeneracion>11/12/2021 18:13:27</billservice:FechaGeneracion>
+          <billservice:Ticket>6803</billservice:Ticket>
+          <billservice:FechaEntrega>Jue 9/12/2021 18:01:00</billservice:FechaEntrega>
+          <billservice:FechaRecepcion>Mar 7/12/2021 09:20:05</billservice:FechaRecepcion>
+          <billservice:ResponsableAtencion>F10ROGER</billservice:ResponsableAtencion>
+          <billservice:DescuentosServicios>0</billservice:DescuentosServicios>
+          <billservice:FormaPago>TARJETA</billservice:FormaPago>
+          <billservice:DireccionLocal>Av.2 de mayo N°1024</billservice:DireccionLocal>
+          <billservice:DistritoLocal>San Isidro</billservice:DistritoLocal>
+          <billservice:TelefonoLocal>4212536</billservice:TelefonoLocal>
+          <billservice:CodigoLocal>PB10</billservice:CodigoLocal>
+        </billservice:AdditionalInformationCliente>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID schemeAgencyName="PE:SUNAT">2.0</cbc:CustomizationID>
+  <cbc:ID>BE10-6394</cbc:ID>
+  <cbc:IssueDate>2021-12-07</cbc:IssueDate>
+  <cbc:InvoiceTypeCode listID="0101" listName="Tipo de Documento" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">03</cbc:InvoiceTypeCode>
+  <cbc:Note languageLocaleID="1000">VEINTINUEVE CON 70/100 SOLES</cbc:Note>
+  <cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listAgencyName="United Nations Economic Commission for Europe" listName="Currency">PEN</cbc:DocumentCurrencyCode>
+  <cac:Signature>
+    <cbc:ID>SignatureID</cbc:ID>
+    <cac:SignatoryParty>
+      <cac:PartyIdentification>
+        <cbc:ID>20600521226</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>CONTEXTOS ASOCIADOS S.A.</cbc:Name>
+      </cac:PartyName>
+      <cac:AgentParty>
+        <cac:PartyIdentification>
+          <cbc:ID>20600521226</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyLegalEntity>
+          <cbc:RegistrationName>CONTEXTOS ASOCIADOS S.A.</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+      </cac:AgentParty>
+    </cac:SignatoryParty>
+    <cac:DigitalSignatureAttachment>
+      <cac:ExternalReference>
+        <cbc:URI>SigNode-03-BE10-6394</cbc:URI>
+      </cac:ExternalReference>
+    </cac:DigitalSignatureAttachment>
+  </cac:Signature>
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20600521226</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name>LAVANDERIAS PRESSTO</cbc:Name>
+      </cac:PartyName>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>CONTEXTOS ASOCIADOS S.A.</cbc:RegistrationName>
+        <cac:RegistrationAddress>
+          <cbc:ID>150131</cbc:ID>
+          <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+          <cbc:StreetName>CAL.1 MZA. B LOTE. 03 ASC. LA CRUZ DE HUANCHIHUAYLAS</cbc:StreetName>
+          <cbc:CitySubdivisionName>LIMA</cbc:CitySubdivisionName>
+          <cbc:CityName>Lima</cbc:CityName>
+          <cbc:CountrySubentity>LIMA</cbc:CountrySubentity>
+          <cbc:District>Ate</cbc:District>
+          <cac:Country>
+            <cbc:IdentificationCode listID="ISO 3166-1" listAgencyID="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeID="0" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">00000000</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>CARLOS, VASQUEZ PEREZ</cbc:RegistrationName>
+        <cac:RegistrationAddress>
+          <cbc:StreetName>:. :. Nro. :. Piso. :.</cbc:StreetName>
+          <cbc:CitySubdivisionName>LIMA</cbc:CitySubdivisionName>
+          <cbc:CityName>LIMA</cbc:CityName>
+          <cbc:CountrySubentity>LIMA</cbc:CountrySubentity>
+          <cbc:District>SAN ISIDRO</cbc:District>
+          <cac:Country>
+            <cbc:IdentificationCode listID="ISO 3166-1" listAgencyID="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+          </cac:Country>
+        </cac:RegistrationAddress>
+      </cac:PartyLegalEntity>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="PEN">4.53</cbc:TaxAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="PEN">25.17</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="PEN">4.53</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
+        <cac:TaxScheme>
+          <cbc:ID schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo05">1000</cbc:ID>
+          <cbc:Name>IGV</cbc:Name>
+          <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="PEN">25.17</cbc:LineExtensionAmount>
+    <cbc:TaxInclusiveAmount currencyID="PEN">29.7</cbc:TaxInclusiveAmount>
+    <cbc:PayableAmount currencyID="PEN">29.7</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">10.59</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">12.5</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">1.91</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">10.59</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">1.91</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo05">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>CAMISA LIMP/PLAN ( 1 ) ^ P.Unidad = 12.5</cbc:Description>
+      <cbc:Description>CKSTEAZUL#BBCUELLO Y PUÑOS BIEN SUCIOS ^</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>P08</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">10.59</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="PEN">14.58</cbc:LineExtensionAmount>
+    <cac:PricingReference>
+      <cac:AlternativeConditionPrice>
+        <cbc:PriceAmount currencyID="PEN">17.2</cbc:PriceAmount>
+        <cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+      </cac:AlternativeConditionPrice>
+    </cac:PricingReference>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="PEN">2.62</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="PEN">14.58</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="PEN">2.62</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID>
+          <cbc:Percent>18.00</cbc:Percent>
+          <cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>
+          <cac:TaxScheme>
+            <cbc:ID schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo05">1000</cbc:ID>
+            <cbc:Name>IGV</cbc:Name>
+            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>PANTALON LIMP/PLAN ( 1 ) ^ P.Unidad = 17.2</cbc:Description>
+      <cbc:Description>PLOMO BBTELA QUEBRADA ^</cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>P02</cbc:ID>
+      </cac:SellersItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="PEN">14.58</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>

@@ -841,7 +841,7 @@ class EmisorListView(ListCreateAPIView):
 
 class CPEListView(ListCreateAPIView): 
     serializer_class = CPEListSerializer
-    def get(self, request, tipoCpe, estadoCpe, rucReceptor, serieCpe, numeroCpe, fechaDesde, fechaHasta):  
+    def get(self, request, tipoCpe, estadoCpe, rucReceptor, serieCpe, numeroCpe, fechaDesde, fechaHasta, idEmisor):  
             tipoCpe = tipoCpe
             estadoCpe = estadoCpe
             rucReceptor = rucReceptor
@@ -849,10 +849,11 @@ class CPEListView(ListCreateAPIView):
             numeroCpe = numeroCpe
             fechaDesde = fechaDesde
             fechaHasta = fechaHasta
+            idEmisor = idEmisor
 
             cursor = connection.cursor()
  
-            param = (tipoCpe, estadoCpe, rucReceptor, serieCpe, numeroCpe, fechaDesde, fechaHasta,)
+            param = (tipoCpe, estadoCpe, rucReceptor, serieCpe, numeroCpe, fechaDesde, fechaHasta, idEmisor,)
             cursor.callproc('dbvisorcpe.sp_ObtenerCPE', param) 
             columns = [d[0] for d in cursor.description]
  
